@@ -128,10 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="compteARebours.cpp" />
+    <ClCompile Include="divisionEntiere.cpp" />
+    <ClCompile Include="fibonacci.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="compteARebours.h" />
+    <ClInclude Include="divisionEntiere.h" />
+    <ClInclude Include="fibonacci.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
