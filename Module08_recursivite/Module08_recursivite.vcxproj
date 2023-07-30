@@ -131,11 +131,13 @@
     <ClCompile Include="divisionEntiere.cpp" />
     <ClCompile Include="fibonacci.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="rechercher.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="compteARebours.h" />
     <ClInclude Include="divisionEntiere.h" />
     <ClInclude Include="fibonacci.h" />
+    <ClInclude Include="rechercher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,6 +6,7 @@
 #include "compteARebours.h"
 #include "divisionEntiere.h"
 #include "fibonacci.h"
+#include "rechercher.h"
 
 std::string dureeLisibleParHumain(long long p_ns,
     bool p_ignoreNs, bool p_ignoreUs, bool p_ignoreMs) {
@@ -64,16 +65,22 @@ std::string dureeLisibleParHumain(long long p_ns,
 }
 
 int main()
-{/*
-    compteARebours(10, 5);
+{/********************** compte a rebours **************************/
+
+  /*  compteARebours(10, 5);
     std::cout<<std::endl;
     compteARebours(10);
     std::cout << std::endl;
     compteARebours(100, 0, 10);
-    std::cout << std::endl;
-    float resultat = divisionEntiere(99, 26);
-    std::cout << "resultat division: " << resultat << std::endl;*/
-    int fibonacci = suiteDeFibonacci(10);
+    std::cout << std::endl;*/
+
+/*********************** division entiere **************************/
+    //float resultat = divisionEntiere(99, 26);
+    //std::cout << "resultat division: " << resultat << std::endl;
+
+/************************* fibonacci *******************************/
+
+/*    int fibonacci = suiteDeFibonacci(10);
     std::cout << fibonacci << std::endl;
     using namespace std::chrono;
 
@@ -93,7 +100,21 @@ int main()
     tempsPasseNs = fin - debut;
     std::cout << "Duree du calcul (ns) : " << tempsPasseNs.count() << std::endl;
 
-    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs.count(), true, true, true) << std::endl;
+    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs.count(), true, true, true) << std::endl;   */ 
 
-    
+/************************** recherche ********************************/
+
+    int tableau[] = { 1, 2, 3, 4, 3, 5, 6, 3, 7, 8, 9 };
+    int tailleTableau = sizeof(tableau) / sizeof(tableau[0]);
+
+    int elementRecherche = 3;
+    int indexElement = rechercher(tableau, elementRecherche, tailleTableau);
+
+    std::cout << "L'element " << elementRecherche << " a l'indice : " << indexElement << std::endl;
+
+    int array[] = { 1, 2, 3, 2, 4, 2, 5 };
+    int taille = sizeof(array) / sizeof(array[0]);
+    int valeur = 2;
+    int occurrences = compterNombreOccurences(array, valeur, taille, recherche);
+    std::cout << "Le nombre d'occurrences de " << valeur << " est : " << occurrences << std::endl;
 }
