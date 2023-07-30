@@ -1,5 +1,6 @@
 #include <iostream>
 #include <sstream>
+#include <stdexcept>
 #include "compteARebours.h"
 
 
@@ -12,6 +13,11 @@ void compteARebours_rec(int p_depart, int p_fin) {
 }
 
 void compteARebours(int p_depart, int p_fin) {
+	if (p_depart < p_fin) {
+		int temp = p_depart;
+		p_depart = p_fin;
+		p_fin = temp;
+	}
 	compteARebours_rec(p_depart, p_fin);
 }
 
@@ -19,7 +25,7 @@ void compteARebours(int p_depart, int p_fin) {
 
 void compteARebours_rec(int n) {
 	std::cout << n << " ";
-	if (n >0) {
+	if (n > 0) {
 		compteARebours_rec(n - 1);
 	}
 }
@@ -35,12 +41,33 @@ void compteARebours(int n) {
 
 void compteARebours_rec(int p_depart, int p_fin, int p_decrementation) {
 	std::cout << p_depart << " ";
-	if (p_depart > p_fin && p_decrementation <= p_depart-p_fin) {
+	if (p_depart < p_fin) {
+		int temp = p_depart;
+		p_depart = p_fin;
+		p_fin = temp;
+	}
+	if (p_depart > p_fin && p_decrementation <= p_depart - p_fin) {
 		compteARebours_rec(p_depart - p_decrementation, p_fin, p_decrementation);
 	}
 }
 
-
 void compteARebours(int p_depart, int p_fin, int p_decrementation) {
 	compteARebours_rec(p_depart, p_fin, p_decrementation);
+}
+
+/***************   division entiere *****************************************/
+
+float divisionEntiere_rec(float p_dividende, float p_diviseur) {
+
+	if (p_dividende > 0 && p_dividende > p_diviseur) {
+		return divisionEntiere_rec(p_dividende - p_diviseur, p_diviseur);
+	}
+}
+
+float divisionEntiere(float p_dividende, float p_diviseur) {
+	float result = 1;
+	if (result > 0) {
+		result =divisionEntiere_rec(p_dividende, p_diviseur);
+	}
+	return result;
 }
