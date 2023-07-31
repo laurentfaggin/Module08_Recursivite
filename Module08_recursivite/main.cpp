@@ -104,7 +104,7 @@ int main()
 
 /************************** recherche ********************************/
 
-    int tableau[] = { 1, 2, 3, 4, 3, 5, 6, 3, 7, 8, 9 };
+    int tableau[] = { 1, 2, 3, 4, 3, 5, 6, 7, 8, 9 };
     int tailleTableau = sizeof(tableau) / sizeof(tableau[0]);
 
     int elementRecherche = 3;
@@ -112,7 +112,7 @@ int main()
 
     std::cout << "L'element " << elementRecherche << " a l'indice : " << indexElement << std::endl;
 
-    int array[] = { 1, 2, 3, 2, 4, 2, 5 };
+    int array[] = { 1, 2, 3, 4, 2, 5 };
     int taille = sizeof(array) / sizeof(array[0]);
     int valeur = 2;
     int occurrences = compterNombreOccurences(array, valeur, taille, recherche);

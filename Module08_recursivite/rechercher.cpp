@@ -71,3 +71,4 @@ int compterNombreOccurences_rec(const int* p_collection, int p_valeurATrouver, i
 int compterNombreOccurences(const int* p_collection, int p_valeurATrouver, int p_tailleTableau, bool(*p_recherche)(const int*, int, int)) {
     return compterNombreOccurences_rec(p_collection, p_valeurATrouver, p_tailleTableau - 1);
 }
+
