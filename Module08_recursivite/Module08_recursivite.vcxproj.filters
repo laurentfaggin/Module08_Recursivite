@@ -30,6 +30,15 @@
     <ClCompile Include="rechercher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pile.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pile_methodes.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pile_methodes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="compteARebours.h">
@@ -42,6 +51,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="rechercher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="liste.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="collection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_operateurs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="operateur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pile_operateurs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

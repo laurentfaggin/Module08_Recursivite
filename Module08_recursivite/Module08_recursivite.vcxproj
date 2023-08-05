@@ -131,12 +131,21 @@
     <ClCompile Include="divisionEntiere.cpp" />
     <ClCompile Include="fibonacci.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="pile.h" />
+    <ClCompile Include="pile_methodes.cpp" />
+    <ClCompile Include="pile_methodes.h" />
     <ClCompile Include="rechercher.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="collection.h" />
     <ClInclude Include="compteARebours.h" />
     <ClInclude Include="divisionEntiere.h" />
     <ClInclude Include="fibonacci.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="file_operateurs.h" />
+    <ClInclude Include="liste.h" />
+    <ClInclude Include="operateur.h" />
+    <ClInclude Include="pile_operateurs.h" />
     <ClInclude Include="rechercher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

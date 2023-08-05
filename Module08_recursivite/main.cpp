@@ -79,32 +79,53 @@ int main()
     //std::cout << "resultat division: " << resultat << std::endl;
 
 /************************* fibonacci *******************************/
-
-/*    int fibonacci = suiteDeFibonacci(10);
-    std::cout << fibonacci << std::endl;
+    std::cout << "Fibonacci" << std::endl;
+    int fibonacci = suiteDeFibonacci(10);
     using namespace std::chrono;
 
     time_point<high_resolution_clock> debut = high_resolution_clock::now();
-    std::cout << "suiteDeFinobacci(10) = " << suiteDeFibonacci(10) << std::endl << std::endl;
+    std::cout << "suiteDeFinobacci(10) = " << suiteDeFibonacci(10) << std::endl;
     time_point<high_resolution_clock> fin = high_resolution_clock::now();
 
     nanoseconds tempsPasseNs = fin - debut;
     std::cout << "Duree du calcul (ns) : " << tempsPasseNs.count() << std::endl;
 
-    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs.count(), true, true, true) << std::endl;
+    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs.count(), true, true, true) << std::endl << std::endl;
 
     debut = high_resolution_clock::now();
-    std::cout << "suiteDeFinobacci(40) = " << suiteDeFibonacci(40) << std::endl << std::endl;
+    std::cout << "suiteDeFinobacci(40) = " << suiteDeFibonacci(40) << std::endl;
     fin = high_resolution_clock::now();
 
     tempsPasseNs = fin - debut;
     std::cout << "Duree du calcul (ns) : " << tempsPasseNs.count() << std::endl;
 
-    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs.count(), true, true, true) << std::endl;   */ 
+    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs.count(), true, true, true) << std::endl<<std::endl;    
+/*************************** Fibonacci upgrade **************************/
+    std::cout << "fibonacci upgrade" << std::endl;
+    int fibonacci2 = suiteDeFibonacciUpgrade(10);
+    using namespace std::chrono;
+
+    time_point<high_resolution_clock> debut2 = high_resolution_clock::now();
+    std::cout << "suiteDeFinobacciUpgrade(10) = " << suiteDeFibonacciUpgrade(10) << std::endl;
+    time_point<high_resolution_clock> fin2 = high_resolution_clock::now();
+
+    nanoseconds tempsPasseNs2 = fin2 - debut2;
+    std::cout << "Duree du calcul (ns) : " << tempsPasseNs2.count() << std::endl;
+
+    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs2.count(), true, true, true) << std::endl << std::endl;
+
+    debut2 = high_resolution_clock::now();
+    std::cout << "suiteDeFinobacciUpgrade(40) = " << suiteDeFibonacciUpgrade(40) << std::endl;
+    fin2 = high_resolution_clock::now();
+
+    tempsPasseNs2 = fin2 - debut2;
+    std::cout << "Duree du calcul (ns) : " << tempsPasseNs2.count() << std::endl;
+
+    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs2.count(), true, true, true) << std::endl;
 
 /************************** recherche ********************************/
 
-    int tableau[] = { 1, 2, 3, 4, 3, 5, 6, 7, 8, 9 };
+   /* int tableau[] = { 1, 2, 3, 4, 3, 5, 6, 7, 8, 9 };
     int tailleTableau = sizeof(tableau) / sizeof(tableau[0]);
 
     int elementRecherche = 3;
@@ -116,5 +137,5 @@ int main()
     int taille = sizeof(array) / sizeof(array[0]);
     int valeur = 2;
     int occurrences = compterNombreOccurences(array, valeur, taille, recherche);
-    std::cout << "Le nombre d'occurrences de " << valeur << " est : " << occurrences << std::endl;
+    std::cout << "Le nombre d'occurrences de " << valeur << " est : " << occurrences << std::endl;*/
 }
