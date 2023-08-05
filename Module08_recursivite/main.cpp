@@ -7,6 +7,8 @@
 #include "divisionEntiere.h"
 #include "fibonacci.h"
 #include "rechercher.h"
+#include "liste.h"
+#include "rechercheDichotomique.h"
 
 std::string dureeLisibleParHumain(long long p_ns,
     bool p_ignoreNs, bool p_ignoreUs, bool p_ignoreMs) {
@@ -79,7 +81,7 @@ int main()
     //std::cout << "resultat division: " << resultat << std::endl;
 
 /************************* fibonacci *******************************/
-    std::cout << "Fibonacci" << std::endl;
+ /*   std::cout << "Fibonacci" << std::endl;
     int fibonacci = suiteDeFibonacci(10);
     using namespace std::chrono;
 
@@ -99,9 +101,10 @@ int main()
     tempsPasseNs = fin - debut;
     std::cout << "Duree du calcul (ns) : " << tempsPasseNs.count() << std::endl;
 
-    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs.count(), true, true, true) << std::endl<<std::endl;    
+    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs.count(), true, true, true) << std::endl<<std::endl;    */
+
 /*************************** Fibonacci upgrade **************************/
-    std::cout << "fibonacci upgrade" << std::endl;
+  /*  std::cout << "fibonacci upgrade" << std::endl;
     int fibonacci2 = suiteDeFibonacciUpgrade(10);
     using namespace std::chrono;
 
@@ -121,7 +124,7 @@ int main()
     tempsPasseNs2 = fin2 - debut2;
     std::cout << "Duree du calcul (ns) : " << tempsPasseNs2.count() << std::endl;
 
-    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs2.count(), true, true, true) << std::endl;
+    std::cout << "Duree du calcul : " << dureeLisibleParHumain(tempsPasseNs2.count(), true, true, true) << std::endl;*/
 
 /************************** recherche ********************************/
 
@@ -138,4 +141,24 @@ int main()
     int valeur = 2;
     int occurrences = compterNombreOccurences(array, valeur, taille, recherche);
     std::cout << "Le nombre d'occurrences de " << valeur << " est : " << occurrences << std::endl;*/
+
+/*******************************   TRI   *******************************/
+    Liste<int> tableau;
+    tableau.ajouterFin(10);
+    tableau.ajouterFin(5);
+    tableau.ajouterFin(3);
+    tableau.ajouterFin(42);
+
+    std::cout << "Tableau initial: " << tableau.toString() << std::endl;
+
+    TriBulles(tableau);
+    std::cout << "Tableau trie avec TriBulles: " << tableau.toString() << std::endl;
+
+    Liste<int> tableau2;
+    tableau2.ajouterFin(10);
+    tableau2.ajouterFin(5);
+    tableau2.ajouterFin(3);
+    tableau2.ajouterFin(42);
+    TriRapide(tableau2);
+    std::cout << "Tableau trie avec TriRapide: " << tableau2.toString() << std::endl;
 }

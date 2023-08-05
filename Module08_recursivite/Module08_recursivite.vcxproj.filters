@@ -39,6 +39,9 @@
     <ClCompile Include="pile_methodes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="rechercheDichotomique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="compteARebours.h">
@@ -69,6 +72,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="pile_operateurs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rechercheDichotomique.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

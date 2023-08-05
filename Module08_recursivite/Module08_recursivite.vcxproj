@@ -134,6 +134,7 @@
     <ClCompile Include="pile.h" />
     <ClCompile Include="pile_methodes.cpp" />
     <ClCompile Include="pile_methodes.h" />
+    <ClCompile Include="rechercheDichotomique.cpp" />
     <ClCompile Include="rechercher.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +147,7 @@
     <ClInclude Include="liste.h" />
     <ClInclude Include="operateur.h" />
     <ClInclude Include="pile_operateurs.h" />
+    <ClInclude Include="rechercheDichotomique.h" />
     <ClInclude Include="rechercher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
