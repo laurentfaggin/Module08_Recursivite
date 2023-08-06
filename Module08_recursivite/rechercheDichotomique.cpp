@@ -87,15 +87,15 @@ bool RechercheDichotomique(const Liste<int>& tableauTrie, int elementRecherche) 
         int valeurMilieu = tableauTrie.obtenir(milieu);
 
         if (valeurMilieu == elementRecherche) {
-            return true; // Element trouvé
+            return true; 
         }
         else if (valeurMilieu < elementRecherche) {
-            debut = milieu + 1; // Chercher dans la moitié supérieure
+            debut = milieu + 1; 
         }
         else {
-            fin = milieu - 1; // Chercher dans la moitié inférieure
+            fin = milieu - 1; 
         }
     }
 
-    return false; // Element non trouvé
+    return false; 
 }

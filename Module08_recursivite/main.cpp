@@ -161,4 +161,23 @@ int main()
     tableau2.ajouterFin(42);
     TriRapide(tableau2);
     std::cout << "Tableau trie avec TriRapide: " << tableau2.toString() << std::endl;
+    Liste<int> tableau3;
+    tableau3.ajouterFin(10);
+    tableau3.ajouterFin(5);
+    tableau3.ajouterFin(3);
+    tableau3.ajouterFin(42);
+
+    // Tri rapide
+    TriRapide(tableau3);
+    std::cout << "Tableau trie avec TriRapide: " << tableau3.toString() << std::endl;
+
+    // Recherche dichotomique
+    int elementRecherche = 5;
+    bool trouve = RechercheDichotomique(tableau3, elementRecherche);
+    if (trouve) {
+        std::cout << "Element " << elementRecherche << " trouve dans le tableau." << std::endl;
+    }
+    else {
+        std::cout << "Element " << elementRecherche << " non trouve dans le tableau." << std::endl;
+    }
 }

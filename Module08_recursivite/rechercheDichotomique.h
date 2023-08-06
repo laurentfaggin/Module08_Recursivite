@@ -7,3 +7,4 @@ void TriRapide(Liste<int>& tableauATrier);
 int ChoixPivot(Liste<int>& p_valeurs, int p_firstIndex, int p_lastIndex);
 int Partitionner(Liste<int>& p_valeurs, int p_firstIndex, int p_lastIndex, int p_pivotIndex);
 bool EstTableauTrie(const Liste<int>& p_valeurs);
+bool RechercheDichotomique(const Liste<int>& tableauTrie, int elementRecherche);
